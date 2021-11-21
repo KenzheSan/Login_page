@@ -1,0 +1,76 @@
+.img{
+    width: 250px;
+    border-radius: 50%;
+}
+.img-content{
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.blackdrop{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    transition: 0.5s;
+    z-index: 20;
+    font-size: 15px;
+    opacity: 0;
+    pointer-events: none;
+}
+.blackdrop.active {
+    opacity: 1;
+    pointer-events: all;
+    transition: 1s all;
+
+}
+.content{
+    border-radius: 12px;
+    background-color:#741188;
+    transform: scale(0.5);
+    transition: 0.5s all;
+    color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 23vw;
+    height: 39vw;
+    transition: 1s linear;
+    position: absolute;
+    right: -300px;
+  
+
+}
+.content.active {
+    transform: scale(1);
+    transition: 1s linear;
+    right: 5px;
+}
+.phone{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 70vh;
+}
+.input{
+    width: 20vw;
+    height: 7vh;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.btn{
+    border-radius: 10px;
+    background: #741188;
+    color:white;
+    height: 30px;
+}
+.btn:hover{
+    border-color: rgb(80, 14, 141);
+    cursor: pointer;
+    background: #4f075e;
+}
